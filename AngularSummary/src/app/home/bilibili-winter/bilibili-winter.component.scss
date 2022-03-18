@@ -1,0 +1,67 @@
+.winter {
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  --percentage: 0.5;
+
+  .view,
+  .tree {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img,
+  video {
+    position: absolute;
+    display: block;
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .view,
+  .tree,
+  .morning,
+  .afternoon {
+    transition: .2s all ease-in;
+  }
+
+  &.moving {
+
+    .view,
+    .tree,
+    .morning,
+    .afternoon {
+      transition: none;
+    }
+  }
+
+  .morning {
+    z-index: 20;
+    opacity: calc(1 - (var(--percentage) - 0.25) / 0.25);
+  }
+
+  .afternoon {
+    z-index: 10;
+    opacity: calc(1 - (var(--percentage) - 0.5) / 0.5);
+  }
+
+  .view {
+    transform: translatex(calc(var(--percentage) * 100px));
+  }
+
+  .tree {
+    transform: translatex(calc(var(--percentage) * 50px));
+    filter: blur(3px);
+  }
+
+  .window-cover {
+    opacity: calc((var(--percentage) - 0.9) / 0.1);
+  }
+}
