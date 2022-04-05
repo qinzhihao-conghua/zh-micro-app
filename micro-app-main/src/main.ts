@@ -8,6 +8,7 @@ import microApp from '@micro-zoe/micro-app';
 if (environment.production) {
   enableProdMode();
 }
+
 microApp.start();
 
 platformBrowserDynamic().bootstrapModule(AppModule)

@@ -6,7 +6,7 @@ import { MyPageComponent } from './my-page/my-page.component';
 const routes: Routes = [
   {
     // 👇 非严格匹配，/my-page/* 都指向 MyPage 页面
-    path: 'child',
+    path: 'app-angular8',
     children: [{
       path: '**',
       component: MyPageComponent
@@ -18,6 +18,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
   // 设置主应用基础路由为main-angular11(用于后续部署)，则子应用基础路由(baseroute)为/main-angular11/xxx
-  providers: [{ provide: APP_BASE_HREF, useValue: '/main' }]
+  providers: [{ provide: APP_BASE_HREF, useValue: '/main-angular12' }]
 })
 export class AppRoutingModule { }

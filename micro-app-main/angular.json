@@ -22,7 +22,7 @@
           "options": {
             "outputPath": "dist/micro-app-main",
             "index": "src/index.html",
-            "deployUrl": "/main/",
+            "deployUrl": "/main-angular12/",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
