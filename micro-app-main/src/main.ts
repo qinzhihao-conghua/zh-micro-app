@@ -3,7 +3,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-import microApp from '@micro-zoe/micro-app'
+import microApp from '@micro-zoe/micro-app';
 
 if (environment.production) {
   enableProdMode();

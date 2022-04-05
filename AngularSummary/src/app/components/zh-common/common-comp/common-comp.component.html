@@ -1,9 +1,0 @@
-<div class="zh-common-page">
-  <router-outlet></router-outlet>
-  <hr>
-  <zh-radio [textFiled]="'name'" [valueFiled]="'value'" [data]="radioNewData" [zhDisabled]="false"
-    (getRadioValue)="getRadioValue($event)" [defaultValue]="{ name: '测试2', value: '2'}"></zh-radio>
-  <hr>
-  <zh-checkbox [textFiled]="'name'" [valueFiled]="'value'" [data]="checkboxNewData"
-    (getSelectValues)="getCheckboxValues($event)"></zh-checkbox>
-</div>
